@@ -7,45 +7,36 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>Página Básica</title>
 
-    <!--Este bloco de css interno -->
     <style>
-      /*
-			Este é um comentário em CSS...
-		*/
+        a{
+          background-color: blue;
+          color: white;
+          text-decoration: none;
+        }
 
-      /*
-			O que é um SELETOR CSS?
-			Um seletor CSS pode ser uma tag HTML qualquer...
-			Um atributo do tipo class ou id também sao seletores.
+ul{
+  text-align: center;
+}
 
-			TAGS como seletores:
-			p{ } Esse um bloco de código onde serão adicionadas as propriedades e seus valores.
-			p{ color : white; } Aqui podemos o seletor p recebendo a propriedade color com o valor white.
-			Podemos adicionar mais de uma propriedade para o seletor.
-		*/
+        .link{
+          display: inline;
+        }
 
-      h1 {
-        background-color: #090b1e;
-        color: #fff;
-        text-align: center;
-        padding: 20px 0;
-        border-radius: 5px;
-        box-shadow: 5px 5px 5px #ff0000;
-      }
     </style>
+    
   </head>
   <body>
     <div id="container">
       <header id="cabecalho">
-        <h1>Minha Página</h1>
+        <h1 style="color: red;">Minha Página</h1>
         <nav>
           <ul>
-            <li>
+            <li class="link">
               <a href="./paginas/help.html">
                 <img src="./img/ajuda.png" alt="Uma interrogação." width="5%" />
               </a>
             </li>
-            <li>
+            <li class="link">
               <a href="./paginas/about.html">
                 <img
                   src="./img/info.png"
@@ -54,7 +45,7 @@
                 />
               </a>
             </li>
-            <li>
+            <li class="link">
               <a href="#">
                 <img
                   src="./img/contact.png"
@@ -70,7 +61,7 @@
 
       <section id="conteudo">
         <div>
-          <h2>HELP</h2>
+          <h2 class="link">HELP</h2>
           <p>
             Help - Lorem ipsum dolor sit amet consectetur, adipisicing elit.
             Laudantium autem, deleniti ab facere sit minima enim possimus
